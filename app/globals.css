@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-800 antialiased;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-3xl mx-auto;
+  }
+  
+  .prose h1 {
+    @apply text-4xl font-semibold text-neutral-900 mb-6 mt-8;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-semibold text-neutral-900 mb-4 mt-8;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold text-neutral-900 mb-3 mt-6;
+  }
+  
+  .prose p {
+    @apply mb-4 text-neutral-700 leading-relaxed;
+  }
+  
+  .prose a {
+    @apply text-soft-blue hover:text-soft-green transition-colors duration-200 underline;
+  }
+  
+  .prose ul,
+  .prose ol {
+    @apply mb-4 ml-6;
+  }
+  
+  .prose li {
+    @apply mb-2 text-neutral-700;
+  }
+  
+  .prose code {
+    @apply bg-neutral-100 px-1.5 py-0.5 rounded text-sm font-mono text-neutral-800;
+  }
+  
+  .prose pre {
+    @apply bg-neutral-100 p-4 rounded-lg overflow-x-auto mb-4;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-soft-blue pl-4 italic text-neutral-600 my-4;
+  }
+  
+  .prose img {
+    @apply rounded-lg shadow-sm my-6;
+  }
+}
+
