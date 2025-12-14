@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getSortedPostsData } from '@/lib/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://yourdomain.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://blog.warunk.biz.id'
   const posts = getSortedPostsData()
 
   const routes: MetadataRoute.Sitemap = [

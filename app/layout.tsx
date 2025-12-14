@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: 'Sebuah blog modern dan minimalis dengan desain yang bersih serta konten yang dibuat dengan penuh pemikiran.',
   keywords: ['blog', 'minimalis', 'desain', 'menulis'],
   authors: [{ name: 'Satria Fadhil Muhammad' }],
+  verification: {
+    google: 'HRb0khTze98LBjxhrhqbwnGq-u9-rt6_T7Zai0HoFkE', // ← Paste verification code di sini (tanpa tag meta, hanya code-nya)
+  },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
